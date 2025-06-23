@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es5", // Or higher, e.g., "es2016", "es2017", "esnext"
     "lib": [
       "dom",
       "dom.iterable",
@@ -12,13 +12,12 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx", // Or "react" for older versions
+    "module": "esnext", // Or "commonjs" if you prefer
+    "moduleResolution": "node", // Crucial for resolving modules from node_modules
+    "resolveJsonModule": true,
+    "isolatedModules": true
   },
   "include": [
     "src"

@@ -1,0 +1,102 @@
+/* components/DemoSection.css */
+.demo-section {
+  padding: 50px 0; /* Padding cho toàn bộ section */
+  background-color: #18181b; /* Màu nền của section */
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.demo-swiper-container {
+  /* Quan trọng: Định nghĩa kích thước cho Swiper */
+  width: 90%; /* Chiều rộng của vùng demo Swiper */
+  max-width: 600px; /* Giới hạn chiều rộng tối đa */
+  height: 80vh; /* **Chiều cao của Swiper** - Nó sẽ cuộn bên trong đây */
+  margin: 0 auto; /* Căn giữa */
+  border-radius: 12px;
+  overflow: hidden; /* Quan trọng: Đảm bảo nội dung Swiper không tràn ra ngoài */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Tùy chỉnh các slide bên trong Swiper */
+.my-demo-swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.demo-content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 8px; /* Bo góc nội dung bên trong slide */
+}
+
+.demo-content-wrapper p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  max-width: 80%;
+}
+
+.placeholder-video {
+  width: 80%;
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px dashed rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+}
+
+/* Ẩn thanh cuộn mặc định của Swiper, nếu bạn muốn giao diện sạch */
+.my-demo-swiper .swiper-scrollbar {
+    display: none;
+}
+
+/* Ẩn các nút điều hướng và phân trang của Swiper */
+.my-demo-swiper .swiper-button-next,
+.my-demo-swiper .swiper-button-prev,
+.my-demo-swiper .swiper-pagination {
+    display: none;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .demo-swiper-container {
+    width: 95%;
+    height: 70vh; /* Giảm chiều cao trên màn hình nhỏ hơn */
+  }
+  .my-demo-swiper .swiper-slide {
+    font-size: 1.2rem;
+  }
+  .demo-content-wrapper p {
+    font-size: 0.9rem;
+  }
+  .placeholder-video {
+    width: 90%;
+    height: 35%;
+  }
+}

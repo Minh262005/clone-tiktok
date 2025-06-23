@@ -1,0 +1,104 @@
+.hero-section {
+  color: #fff;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  width: 100vw;
+  margin-top: 80px;
+}
+.hero-content h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+.hero-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+.download-btn {
+  background: #fe2c55;
+  color: #fff;
+  border: none;
+  padding: 20px 0;
+  width: 30rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.download-btn:hover {
+  background: #d91b46;
+}
+.download-icon {
+  font-size: 1.5rem;
+  margin-right: 8px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.access-btn {
+  background: #23272f;
+  color: #fff;
+  border: none;
+  width: 30rem;
+  padding: 18px 0;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: 500;
+}
+.access-btn:hover {
+  background: #333;
+}
+.note {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-top: 24px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .download-btn, .access-btn {
+    width: 90vw;
+    font-size: 1rem;
+    padding: 14px 0;
+  }
+}
+@media (max-width: 400px) {
+  .hero-content h1 {
+    font-size: 1.2rem;
+  }
+  .download-btn, .access-btn {
+    width: 98vw;
+    font-size: 0.8rem;
+    padding: 10px 0;
+  }
+  .note {
+    font-size: 0.8rem;
+  }
+} 

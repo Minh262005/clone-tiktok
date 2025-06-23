@@ -1,0 +1,273 @@
+.features-section {
+  background: #18181b;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.features-content h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+.feature-item {
+  background: linear-gradient(135deg, #fe2c55 60%, #fda085 100%);
+  color: #fff;
+  padding: 20px 36px;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  min-width: 140px;
+}
+.features-section-2col {
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  gap: 80px;
+  margin-top: 60px;
+
+}
+.features-left {
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+.features-image-wrapper {
+  position: relative;
+  width: 600px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features-person-bg {
+  position: absolute;
+  left: 180px;
+  top: 0;
+  width: 37%;
+  height: 83%;
+  object-fit: contain;
+  z-index: 3;
+}
+.features-pc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+.features-iphone {
+  position: absolute;
+  left: 82%;
+  top: 67%;
+  width: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.feature-label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff33;
+  color: #fff;
+  font-size: 1.18rem;
+  font-weight: 600;
+  border-radius: 14px;
+  width: 130px;
+  height: 110px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  z-index: 10;
+  text-align: center;
+  gap: 12px;
+  padding: 0;
+  border: none;
+}
+.feature-label svg {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 4px;
+  display: block;
+}
+.feature-label span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.label-goal {
+  left: 9%;
+  top: -1%;
+  width: 100px;
+  height: 100px;
+  display: flex
+;
+}
+.label-sub {
+  width: 100px;
+  height: 100px;
+  left: 37%;
+  top: -10%;
+}
+.label-multi {
+  width: 100px;
+  height: 100px;
+  left: 62%;
+  top: -8%;
+}
+.label-cohost {
+  width: 100px;
+  height: 100px;
+  right: 2%;
+  top: 18%;
+
+}
+.label-highlight {
+
+  left: -4%;
+  top: 34%;
+  width: 100px;
+  height: 100px;
+  display: flex
+;
+
+}
+.label-poll {
+  left: 10%;
+  bottom: 13%;
+  width: 100px;
+  height: 100px;
+  display: flex
+;
+
+}
+.features-right {
+  flex: 1;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 80px;
+  text-align: right;
+}
+.features-right h2 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 28px;
+  line-height: 1.1;
+}
+.features-right p {
+  font-size: 1.25rem;
+  color: #b0b3b8;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+@media (max-width: 1200px) {
+  .features-section-2col {
+    gap: 40px;
+    min-height: 600px;
+  }
+  .features-image-wrapper {
+    width: 480px;
+    height: 370px;
+  }
+  .features-pc, .features-person-bg {
+    width: 480px;
+    height: 370px;
+  }
+  .features-iphone {
+    left: 70%;
+    top: 60%;
+    width: 20%;
+  }
+  .label-goal { left: 0%; top: 18%; }
+  .label-sub { left: 25%; top: -10%; }
+  .label-multi { left: 55%; top: -10%; }
+  .label-cohost { right: -10%; top: 18%; }
+}
+@media (max-width: 900px) {
+  .features-section-2col {
+    flex-direction: column;
+    padding: 40px 0 60px 0;
+    gap: 24px;
+  }
+  .features-right, .features-left {
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .features-image-wrapper {
+    width: 340px;
+    height: 260px;
+  }
+  .features-person-bg, .features-pc {
+    width: 340px;
+    height: 260px;
+  }
+  .features-iphone {
+    left: 70%;
+    top: 60%;
+    width: 20%;
+  }
+  .feature-label {
+    font-size: 0.9rem;
+    width: 90px;
+    height: 70px;
+    border-radius: 8px;
+    gap: 4px;
+  }
+  .feature-label svg {
+    width: 22px;
+    height: 22px;
+  }
+  .label-goal { left: 0%; top: 18%; }
+  .label-sub { left: 25%; top: -10%; }
+  .label-multi { left: 55%; top: -10%; }
+  .label-cohost { right: -10%; top: 18%; }
+}
+@media (max-width: 500px) {
+  .features-section-2col {
+    gap: 8px;
+    padding: 20px 0 30px 0;
+  }
+  .features-image-wrapper {
+    width: 180px;
+    height: 120px;
+  }
+  .features-person-bg, .features-pc {
+    width: 180px;
+    height: 120px;
+  }
+  .features-iphone {
+    left: 80%;
+    top: 80%;
+    width: 15%;
+  }
+  .feature-label {
+    font-size: 0.7rem;
+    width: 50px;
+    height: 36px;
+    border-radius: 4px;
+    gap: 2px;
+  }
+  .feature-label svg {
+    width: 12px;
+    height: 12px;
+  }
+} 

@@ -1,0 +1,107 @@
+.realtime-section {
+  background-color: black;
+  color: #fff;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.realtime-content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  background-color: black;
+}
+.realtime-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 80px;
+  max-width: 540px;
+  text-align: right;
+}
+.realtime-description h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 32px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+.realtime-description p {
+  font-size: 1.35rem;
+  color: #d1d5db;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.realtime-mockup {
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #23272f;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+  padding: 24px;
+  max-width: 700px;
+}
+.realtime-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+}
+@media (max-width: 1200px) {
+  .realtime-content {
+    gap: 40px;
+    padding: 60px 0 80px 0;
+  }
+  .realtime-img {
+    max-width: 420px;
+  }
+  .realtime-description h2 {
+    font-size: 2.4rem;
+  }
+  .realtime-description {
+    padding-right: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .realtime-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 40px 0 60px 0;
+  }
+  .realtime-description, .realtime-mockup {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .realtime-img {
+    max-width: 95vw;
+  }
+  .realtime-description h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .realtime-content {
+    gap: 8px;
+    padding: 10px 0 20px 0;
+  }
+  .realtime-description h2 {
+    font-size: 1.1rem;
+  }
+  .realtime-img {
+    max-width: 98vw;
+  }
+  .realtime-description p {
+    font-size: 0.9rem;
+  }
+} 

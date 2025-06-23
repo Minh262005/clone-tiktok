@@ -1,0 +1,147 @@
+.widgets-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+.widgets-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.widgets-text {
+  flex: 1;
+  max-width: 450px;
+}
+
+.widgets-text h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.widgets-text p {
+  font-size: 1.25rem;
+  color: #b0b3b8;
+  line-height: 1.6;
+}
+
+.widgets-image {
+  position: relative;
+  display: inline-block;
+  max-width: 600px;
+  width: 100%;
+  height: 400px;
+}
+
+.widgets-bg {
+  width: 100%;
+  height: 23rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.widgets-middle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.widgets-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.widgets-image img {
+  max-width: 100%;
+
+}
+
+@media (max-width: 900px) {
+  .widgets-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .widgets-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .widgets-text p {
+    font-size: 1.1rem;
+  }
+  .widgets-image {
+    max-width: 100%;
+    height: 220px;
+  }
+  .widgets-bg {
+    height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .widgets-content {
+    padding: 0 10px;
+    gap: 24px;
+  }
+  .widgets-text h2 {
+    font-size: 1.5rem;
+  }
+  .widgets-text p {
+    font-size: 1rem;
+  }
+  .widgets-image {
+    max-width: 100%;
+    height: 140px;
+  }
+  .widgets-bg {
+    height: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .widgets-content {
+    gap: 12px;
+    padding: 0 2px;
+  }
+  .widgets-text h2 {
+    font-size: 1.1rem;
+  }
+  .widgets-text p {
+    font-size: 0.85rem;
+  }
+  .widgets-image {
+    height: 80px;
+    max-width: 98vw;
+  }
+  .widgets-bg {
+    height: 80px;
+  }
+} 
