@@ -31,7 +31,7 @@ A React + TypeScript project.
 ## Requirements
 
 - Node.js >= 14
-- npm or yarn
+- npm 
 
 ## Notes
 
